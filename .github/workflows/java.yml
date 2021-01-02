@@ -4,10 +4,10 @@ on:
 jobs:
   
   job:
-    name: Run
-    runs-on: ubuntu-latest
-    
-    run: |
-      apt upgrade
-      apt install java
-      java -v
+    steps:
+    - name: Run
+    - runs-on: ubuntu-latest
+    - run: |
+        apt upgrade
+        apt install java
+        java -v
